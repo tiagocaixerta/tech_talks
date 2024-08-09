@@ -6,13 +6,14 @@
     <title>Ebac Tech Talks</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="ebac">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -35,6 +36,55 @@
             </div>
         </div>
     </header>
+    <section class="event event--front-end" > 
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    O frontend é a parte do desenvolvimento web que lida diretamente com a interface que o usuário vê e interage. Ele envolve a criação de layouts, design, e a implementação de interações que garantem que os visitantes de um site ou aplicação tenham uma experiência agradável e intuitiva.
+                    As tecnologias fundamentais do frontend incluem HTML (para estruturar o conteúdo), CSS (para estilizar e dar forma a esse conteúdo), e JavaScript (para adicionar interatividade e dinamismo). Nos últimos anos, frameworks e bibliotecas como React, Vue.js, e Angular tornaram-se essenciais para criar interfaces mais complexas e dinâmicas de maneira eficiente.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="front-end">
+        </div>
+    </section>
+
+    <section class="event event--ux-ui event--image-left" > 
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Ux/Ui</h2>
+                <p class="event__details__description">
+                    Nosso objetivo é proporcionar uma experiência de usuário que seja ao mesmo tempo agradável e eficiente. Pensamos em cada detalhe para garantir que você encontre o que precisa com rapidez e facilidade. Navegar pela nossa interface é como folhear um livro familiar: intuitivo, fluido, e sempre levando você ao próximo passo de forma natural.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="front-end">
+        </div>
+    </section>
+
+    <section class="event event--data-science" > 
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Vivemos na era dos dados, onde cada clique, transação e interação digital gera informações valiosas. No campo da Data Science, nosso objetivo é capturar, processar e interpretar esses dados para transformar complexidade em clareza e informação em ação.
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="front-end">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left" > 
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Backend</h2>
+                <p class="event__details__description">
+                    No mundo digital, o backend é o motor que impulsiona as aplicações e serviços que você usa todos os dias. É onde a lógica, o processamento e o gerenciamento de dados acontecem, garantindo que sua aplicação funcione de maneira eficiente e segura.
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="front-end">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
